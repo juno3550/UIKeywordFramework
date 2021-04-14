@@ -1,0 +1,78 @@
+2021-04-15 00:38:48 [INFO] ---------------------------------------- 测试用例集【登录流程】开始执行！----------------------------------------
+2021-04-15 00:38:54 [INFO] 测试用例步骤执行成功：【打开浏览器】 init_browser('chrome')
+2021-04-15 00:39:01 [INFO] 测试用例步骤执行成功：【访问126邮箱首页】 visit('https://www.126.com')
+2021-04-15 00:39:01 [INFO] 测试用例步骤执行成功：【进入首页的frame】 switch_frame('126mail_indexPage', 'indexPage.frame')
+2021-04-15 00:39:01 [INFO] 测试用例步骤执行成功：【清除用户名框的内容】 clear('126mail_indexPage', 'indexPage.username')
+2021-04-15 00:39:01 [INFO] 测试用例步骤执行成功：【输入邮箱用户名】 input('126mail_indexPage', 'indexPage.username', 'juno3550')
+2021-04-15 00:39:02 [INFO] 测试用例步骤执行成功：【输入邮箱密码】 input('126mail_indexPage', 'indexPage.password', '258978aa')
+2021-04-15 00:39:02 [INFO] 测试用例步骤执行成功：【点击登录按钮】 click('126mail_indexPage', 'indexPage.loginbutton')
+2021-04-15 00:39:02 [INFO] 测试用例步骤执行成功：【切换出frame】 switch_home_frame()
+2021-04-15 00:39:05 [INFO] 测试用例步骤执行成功：【等待3秒】 sleep('3')
+2021-04-15 00:39:14 [INFO] 测试用例步骤执行失败：【断言是否登录成功】 assert_word('退出1')
+2021-04-15 00:39:14 [ERROR] Traceback (most recent call last):
+  File "E:\pycharm_project_dir\UIKeywordFramework\business_process\case_process.py", line 52, in execute_case
+    eval(func)
+  File "<string>", line 1, in <module>
+  File "E:\pycharm_project_dir\UIKeywordFramework\action\page_action.py", line 98, in assert_word
+    assert keyword in DRIVER.page_source
+AssertionError
+
+2021-04-15 00:39:15 [ERROR] ######################################## 测试用例集【登录流程】执行失败！ ########################################
+
+2021-04-15 00:39:15 [INFO] ---------------------------------------- 测试用例集【登录流程】开始执行！----------------------------------------
+2021-04-15 00:39:21 [INFO] 测试用例步骤执行成功：【打开浏览器】 init_browser('chrome')
+2021-04-15 00:39:30 [INFO] 测试用例步骤执行成功：【访问126邮箱首页】 visit('https://www.126.com')
+2021-04-15 00:39:30 [INFO] 测试用例步骤执行成功：【进入首页的frame】 switch_frame('126mail_indexPage', 'indexPage.frame')
+2021-04-15 00:39:30 [INFO] 测试用例步骤执行成功：【清除用户名框的内容】 clear('126mail_indexPage', 'indexPage.username')
+2021-04-15 00:39:30 [INFO] 测试用例步骤执行成功：【输入邮箱用户名】 input('126mail_indexPage', 'indexPage.username', 'juno3550')
+2021-04-15 00:39:31 [INFO] 测试用例步骤执行成功：【输入邮箱密码】 input('126mail_indexPage', 'indexPage.password', '258978aa')
+2021-04-15 00:39:31 [INFO] 测试用例步骤执行成功：【点击登录按钮】 click('126mail_indexPage', 'indexPage.loginbutton')
+2021-04-15 00:39:31 [INFO] 测试用例步骤执行成功：【切换出frame】 switch_home_frame()
+2021-04-15 00:39:34 [INFO] 测试用例步骤执行成功：【等待3秒】 sleep('3')
+2021-04-15 00:39:45 [INFO] 测试用例步骤执行成功：【断言是否登录成功】 assert_word('退出')
+2021-04-15 00:39:45 [INFO] ######################################## 测试用例集【登录流程】执行成功！ ########################################
+
+2021-04-15 00:39:45 [INFO] ---------------------------------------- 测试用例集【联系人人流程】开始执行！----------------------------------------
+2021-04-15 00:39:45 [INFO] 测试用例步骤执行成功：【点击通讯录链接】 click('126mail_homePage', 'homePage.addressLink')
+2021-04-15 00:39:46 [INFO] 测试用例步骤执行成功：【点击新建联系人按钮】 click('126mail_contactPersonPage', 'contactPersonPage.createButton')
+2021-04-15 00:39:46 [INFO] 测试用例步骤执行成功：【填写名称】 input('126mail_contactPersonPage', 'contactPersonPage.name', '张三')
+2021-04-15 00:39:47 [INFO] 测试用例步骤执行成功：【填写email】 input('126mail_contactPersonPage', 'contactPersonPage.email', 'zhangsan@qq.com')
+2021-04-15 00:39:47 [INFO] 测试用例步骤执行成功：【填写手机号】 input('126mail_contactPersonPage', 'contactPersonPage.phone', '13301111111')
+2021-04-15 00:39:48 [INFO] 测试用例步骤执行成功：【填写其他信息】 input('126mail_contactPersonPage', 'contactPersonPage.otherinfo', '张三的信息')
+2021-04-15 00:39:48 [INFO] 测试用例步骤执行成功：【点击提交按钮】 click('126mail_contactPersonPage', 'contactPersonPage.confirmButton')
+2021-04-15 00:39:49 [INFO] 测试用例步骤执行成功：【等待1秒】 sleep('1')
+2021-04-15 00:39:49 [INFO] 测试用例步骤执行成功：【断言】 assert_word('张三')
+2021-04-15 00:39:49 [INFO] ######################################## 测试用例集【联系人人流程】执行成功！ ########################################
+
+2021-04-15 00:39:49 [INFO] ---------------------------------------- 测试用例集【联系人人流程】开始执行！----------------------------------------
+2021-04-15 00:39:49 [INFO] 测试用例步骤执行成功：【点击通讯录链接】 click('126mail_homePage', 'homePage.addressLink')
+2021-04-15 00:39:49 [INFO] 测试用例步骤执行成功：【点击新建联系人按钮】 click('126mail_contactPersonPage', 'contactPersonPage.createButton')
+2021-04-15 00:39:49 [INFO] 测试用例步骤执行成功：【填写名称】 input('126mail_contactPersonPage', 'contactPersonPage.name', '李四')
+2021-04-15 00:39:50 [INFO] 测试用例步骤执行成功：【填写email】 input('126mail_contactPersonPage', 'contactPersonPage.email', 'lisi@qq.com')
+2021-04-15 00:39:50 [INFO] 测试用例步骤执行成功：【填写手机号】 input('126mail_contactPersonPage', 'contactPersonPage.phone', '13301222222')
+2021-04-15 00:39:51 [INFO] 测试用例步骤执行成功：【填写其他信息】 input('126mail_contactPersonPage', 'contactPersonPage.otherinfo', '李四的信息')
+2021-04-15 00:39:51 [INFO] 测试用例步骤执行成功：【点击提交按钮】 click('126mail_contactPersonPage', 'contactPersonPage.confirmButton')
+2021-04-15 00:39:52 [INFO] 测试用例步骤执行成功：【等待1秒】 sleep('1')
+2021-04-15 00:39:52 [INFO] 测试用例步骤执行成功：【断言】 assert_word('李四')
+2021-04-15 00:39:52 [INFO] ######################################## 测试用例集【联系人人流程】执行成功！ ########################################
+
+2021-04-15 00:39:52 [INFO] ---------------------------------------- 测试用例集【联系人人流程】开始执行！----------------------------------------
+2021-04-15 00:39:52 [INFO] 测试用例步骤执行成功：【点击通讯录链接】 click('126mail_homePage', 'homePage.addressLink')
+2021-04-15 00:39:52 [INFO] 测试用例步骤执行成功：【点击新建联系人按钮】 click('126mail_contactPersonPage', 'contactPersonPage.createButton')
+2021-04-15 00:39:53 [INFO] 测试用例步骤执行成功：【填写名称】 input('126mail_contactPersonPage', 'contactPersonPage.name', '王五')
+2021-04-15 00:39:53 [INFO] 测试用例步骤执行成功：【填写email】 input('126mail_contactPersonPage', 'contactPersonPage.email', 'wangwu@qq.com')
+2021-04-15 00:39:53 [INFO] 测试用例步骤执行成功：【填写手机号】 input('126mail_contactPersonPage', 'contactPersonPage.phone', '13303333333')
+2021-04-15 00:39:54 [INFO] 测试用例步骤执行成功：【填写其他信息】 input('126mail_contactPersonPage', 'contactPersonPage.otherinfo', '王五的信息')
+2021-04-15 00:39:54 [INFO] 测试用例步骤执行成功：【点击提交按钮】 click('126mail_contactPersonPage', 'contactPersonPage.confirmButton')
+2021-04-15 00:39:55 [INFO] 测试用例步骤执行成功：【等待1秒】 sleep('1')
+2021-04-15 00:39:55 [INFO] 测试用例步骤执行成功：【断言】 assert_word('王五')
+2021-04-15 00:39:55 [INFO] ######################################## 测试用例集【联系人人流程】执行成功！ ########################################
+
+2021-04-15 00:39:55 [ERROR] ######################################## 用例步骤集【添加联系人】不存在！ ########################################
+
+2021-04-15 00:39:55 [INFO] ---------------------------------------- 测试用例集【关闭浏览器】开始执行！----------------------------------------
+2021-04-15 00:39:58 [INFO] 测试用例步骤执行成功：【关闭浏览器】 quit()
+2021-04-15 00:39:58 [INFO] ######################################## 测试用例集【关闭浏览器】执行成功！ ########################################
+
+2021-04-15 00:39:58 [INFO] 生成测试结果文件：E:\pycharm_project_dir\UIKeywordFramework\test_report\2021年04月15日\UI自动化测试报告_全量测试_20210415_003958.xlsx
+2021-04-15 00:40:08 [INFO] 测试报告邮件发送成功!【邮件标题：UI自动化测试报告_全量测试_20210415_003958】【邮件附件：E:\pycharm_project_dir\UIKeywordFramework\test_report\2021年04月15日\UI自动化测试报告_全量测试_20210415_003958.xlsx】【收件人：['itsjuno@163.com', '182230124@qq.com']】
