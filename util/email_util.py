@@ -8,7 +8,7 @@ def send_mail(attachments_report_name, receiver, subject, content):
         # 连接邮箱服务器
         # 注意：若使用QQ邮箱，则password为授权码而非邮箱密码；使用其它邮箱则为邮箱密码
         # encoding设置为GBK，否则中文附件名会乱码
-        yag = yagmail.SMTP(user="itsjuno@163.com", password="junosue0612", host="smtp.163.com", encoding='GBK')
+        yag = yagmail.SMTP(user="******@163.com", password="******", host="smtp.163.com", encoding='GBK')
 
         # 收件人、标题、正文、附件（若多个收件人或多个附件，则可使用列表）
         yag.send(to=receiver, subject=subject, contents=content, attachments=attachments_report_name)
