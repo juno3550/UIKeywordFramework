@@ -1,6 +1,7 @@
 # UIKeywordFramework
 UI自动化测试框架 混合驱动：关键字驱动+数据驱动+多线程并发执行
 </br>
+博客详解：https://www.cnblogs.com/juno3550/p/14431902.html
 
 <h2>工程结构说明</h2>
 
