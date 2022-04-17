@@ -22,4 +22,4 @@ def send_mail(attachments_report_name, receiver, subject, content):
 
 
 if __name__ == "__main__":
-   send_mail("e:\\code.txt", "182230124@qq.com", "测试邮件", "正文")
+   send_mail("e:\\code.txt", "xxxx@qq.com", "测试邮件", "正文")
